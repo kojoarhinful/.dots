@@ -1,0 +1,43 @@
+theme = "sweet"
+
+[editor]
+clipboard-provider = "x-clip"
+line-number = "relative"
+cursorline = false
+true-color = true
+bufferline = "never"
+color-modes = true
+mouse = false
+auto-info = true
+soft-wrap = { enable = true }
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = true
+
+[editor.indent-guides]
+render = false
+character = "│"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = []
+right = ["diagnostics", "selections", "position", "total-line-numbers", "file-encoding"]
+
+[keys.insert]
+j = { k = "normal_mode" }
+C-c = "normal_mode"
+
+[keys.normal]
+space.q = ":quit"
+space.w = ":write"
+space.n = ":buffer-next"
+space.p = ":buffer-previous"
+space.x = ":buffer-close"
+
+[keys.select]
+C-c = "normal_mode"

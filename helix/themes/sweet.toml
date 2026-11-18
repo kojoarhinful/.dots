@@ -1,0 +1,158 @@
+# sweet: made to match my terminal feel from wezterm.lua
+
+"keyword" = { fg = "aqua" }
+"keyword.control" = { fg = "aqua" }
+"keyword.control.conditional" = { fg = "red" }
+"keyword.control.repeat" = { fg = "red" }
+"keyword.control.import" = { fg = "aqua" }
+"keyword.control.return" = { fg = "red" }
+"keyword.control.exception" = { fg = "red" }
+"keyword.directive" = { fg = "aqua" }
+
+"keyword.function" = { fg = "lavender" }
+"keyword.storage" = { fg = "lavender" }
+"keyword.storage.type" = { fg = "lavender" }
+"keyword.operator" = { fg = "quiet" }
+
+"string" = { fg = "green" }
+"string.regexp" = { fg = "green" }
+"string.special" = { fg = "green" }
+"constant.character" = { fg = "green" }
+"constant.character.escape" = { fg = "peach" }
+
+"function" = { fg = "peach" }
+"function.method" = { fg = "peach" }
+"function.builtin" = { fg = "peach" }
+"function.macro" = { fg = "peach" }
+"function.special" = { fg = "peach" }
+
+"type" = { fg = "lavender" }
+"type.builtin" = { fg = "yellow" }
+"type.enum.variant" = { fg = "yellow" }
+"constructor" = { fg = "lavender" }
+"namespace" = { fg = "text" }
+
+"variable" = { fg = "text" }
+"variable.builtin" = { fg = "mauve" }
+"variable.parameter" = { fg = "mauve" }
+"variable.other.member" = { fg = "text" }
+"attribute" = { fg = "yellow" }
+"tag" = { fg = "red" }
+"label" = { fg = "yellow" }
+
+"constant" = { fg = "yellow" }
+"constant.builtin" = { fg = "yellow" }
+"constant.builtin.boolean" = { fg = "yellow" }
+"constant.numeric" = { fg = "yellow" }
+"constant.numeric.integer" = { fg = "yellow" }
+"constant.numeric.float" = { fg = "yellow" }
+
+"operator" = { fg = "quiet" }
+"punctuation" = { fg = "subtext" }
+"punctuation.delimiter" = { fg = "subtext" }
+"punctuation.bracket" = { fg = "subtext" }
+"punctuation.special" = { fg = "subtext" }
+
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "comment", modifiers = ["italic"] }
+
+"special" = { fg = "peach" }
+
+"markup.heading" = { fg = "peach", modifiers = ["bold"] }
+"markup.list" = { fg = "red" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "lavender", modifiers = ["underlined"] }
+"markup.link.text" = { fg = "peach" }
+"markup.quote" = { fg = "comment", modifiers = ["italic"] }
+"markup.raw" = { fg = "green" }
+
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "red" }
+"diff.delta" = { fg = "yellow" }
+
+"ui.background" = {}
+"ui.text" = { fg = "text" }
+"ui.text.focus" = { fg = "orange", modifiers = ["bold"] }
+"ui.text.directory" = { fg = "lavender" }
+
+"ui.linenr" = { fg = "linenr" }
+"ui.linenr.selected" = { fg = "orange", modifiers = ["bold"] }
+"ui.gutter" = {}
+"ui.gutter.selected" = {}
+
+"ui.cursor" = { fg = "bg_dark", bg = "orange" }
+"ui.cursor.primary" = { fg = "bg_dark", bg = "orange" }
+"ui.cursor.insert" = { fg = "bg_dark", bg = "orange" }
+"ui.cursor.select" = { fg = "bg_dark", bg = "orange" }
+"ui.cursor.match" = { fg = "yellow", modifiers = ["bold", "underlined"] }
+
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+"ui.cursorline.primary" = { bg = "cursorline" }
+"ui.cursorline.secondary" = { bg = "cursorline" }
+"ui.cursorcolumn.primary" = { bg = "cursorline" }
+
+"ui.virtual.ruler" = { bg = "cursorline" }
+"ui.virtual.whitespace" = { fg = "linenr" }
+"ui.virtual.indent-guide" = { fg = "guide" }
+"ui.virtual.inlay-hint" = { fg = "comment" }
+"ui.virtual.wrap" = { fg = "linenr" }
+"ui.virtual.jump-label" = { fg = "orange", modifiers = ["bold"] }
+
+"ui.statusline" = { fg = "text" }
+"ui.statusline.inactive" = { fg = "comment" }
+"ui.statusline.normal" = { fg = "orange", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "orange", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "orange", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "comment" }
+
+"ui.bufferline" = { fg = "comment" }
+"ui.bufferline.active" = { fg = "orange", modifiers = ["bold", "underlined"] }
+"ui.bufferline.background" = {}
+
+"ui.popup" = { fg = "text" }
+"ui.popup.info" = { fg = "text" }
+"ui.window" = { fg = "guide" }
+"ui.help" = { fg = "text" }
+
+"ui.menu" = { fg = "subtext" }
+"ui.menu.selected" = { fg = "orange", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "comment" }
+
+"error" = { fg = "red" }
+"warning" = { fg = "yellow" }
+"info" = { fg = "lavender" }
+"hint" = { fg = "quiet" }
+
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "lavender", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "quiet", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+[palette]
+text = "#c3cbd9"
+subtext = "#8f9ab0"
+quiet = "#7a869c"
+comment = "#5c6a82"
+linenr = "#4b566b"
+guide = "#343c4f"
+
+red = "#d9737d"
+green = "#8fa588"
+yellow = "#ebcb8b"
+mauve = "#b48ead"
+
+peach = "#dbb79a"
+lavender = "#a89ed6"
+aqua = "#78b5bf"
+
+orange = "#ff9a3c"
+orange_dim = "#b8723a"
+
+bg_dark = "#1b1f2b"
+cursorline = "#2a3042"
+selection = "#38405a"

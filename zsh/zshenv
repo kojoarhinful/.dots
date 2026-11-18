@@ -1,0 +1,2 @@
+# Only load Cargo if Rust is installed.
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"

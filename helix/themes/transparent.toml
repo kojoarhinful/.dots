@@ -1,0 +1,22 @@
+inherits = "vitesse-dark-like"
+
+"ui.background" = { bg = "none" }
+
+"ui.linenr" = { fg = "#3b4048", bg = "none" }
+"ui.linenr.selected" = { fg = "#6b7280", bg = "none" }
+
+"ui.menu" = { fg = "gray", bg = "none" }
+"ui.menu.selected" = { fg = "white", bg = "none" }
+
+"ui.popup" = { bg = "none" }
+"ui.window" = { fg = "#2c313a", bg = "none" }
+"ui.help" = { bg = "none" }
+
+"ui.statusline" = { bg = "none" }
+"ui.statusline.normal" = { fg = "#abb2bf", bg = "#3e4451" }
+"ui.statusline.insert" = { fg = "#abb2bf", bg = "#3e4451" }
+"ui.statusline.select" = { fg = "#abb2bf", bg = "#3e4451" }
+
+"ui.bufferline" = { fg = "#5c6370", bg = "none" }
+"ui.bufferline.active" = { fg = "#abb2bf", bg = "#3e4451" }
+"ui.bufferline.background" = { bg = "none" }

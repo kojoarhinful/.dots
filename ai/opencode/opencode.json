@@ -1,0 +1,42 @@
+{
+	"$schema": "https://opencode.ai/config.json",
+	"formatter": true,
+	"provider": {
+		"lmstudio": {
+			"npm": "@ai-sdk/openai-compatible",
+			"name": "LM Studio (local)",
+			"options": {
+				"baseURL": "http://127.0.0.1:1234/v1"
+			},
+			"models": {
+				"qwen2.5-coder-7b-instruct": {
+					"name": "Qwen2.5 Coder 7B"
+				}
+			}
+		}
+	},
+	"permissions": [
+		{ "action": "shell", "resource": "git push*", "effect": "ask" },
+		{ "action": "shell", "resource": "rm -rf*", "effect": "ask" },
+		{ "action": "shell", "resource": "sudo*", "effect": "ask" },
+		{ "action": "shell", "resource": "./install.sh*", "effect": "ask" }
+	],
+	"agents": {
+		"reviewer": {
+			"description": "Reviews changes without editing files",
+			"mode": "subagent",
+			"system": "Review the current changes. Report findings in severity order with file and line references. Do not edit files or run shell commands.",
+			"permissions": [
+				{ "action": "edit", "resource": "*", "effect": "deny" },
+				{ "action": "shell", "resource": "*", "effect": "deny" }
+			]
+		}
+	},
+	"commands": {
+		"review": {
+			"description": "Review the current changes",
+			"agent": "reviewer",
+			"template": "Review the current changes. Report bugs, risky code, and missing tests with file and line references."
+		}
+	}
+}
